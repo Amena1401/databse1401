@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+    <head>
+	    <meta name="descraption" content=""/>
+		<meta name="view-port" content="width=device-width,iniatil-scale=1,miximum-scale=1"/>
+		<meta name="author" content=""/>
+		<meta name="keywordes" content="html, form"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+	</head>
+	<body>
+	<center style="color:red">
+        <script type="text/javascript">
+		     var valueinfo=function print(num1, num2)
+			 {
+			 	 document.write("first number is"+num1+"</br>");
+				 document.write("second number is"+num2+"</br>");
+							 
+							for(var value=num1; value<=num2; value++)
+							{
+							     if(value %2==0)
+								 {
+								     document.write("Value even is => "+value+"</br>"); 
+								 }
+							}
+			 };
+		     var myvalue=function myFun()
+			             {
+						     num1=parseInt(prompt("Enter the first number"));
+							 num2=parseInt(prompt("Enter the second number"));
+						     valueinfo(num1, num2);
+						 };
+						 myvalue();
+		</script>
+		</center>
+	</body>
+</html>

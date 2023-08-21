@@ -1,0 +1,55 @@
+<html>
+     <head>
+	      <title>class declarattion</title>
+		  <meta name="keywords" content ="html, project"/>
+		  <meta name="author" content =""/>
+		  <meta name="description" content =""/>
+		  <meta name="view-port" content ="width=device-width, initial-scale=1,miximum-scale=1"/>
+	 </head>
+	 <body>
+	     <script type="text/javascript">
+		 
+		     class Employee
+			 {
+			     constractor(name, last, address, id, salary, tax)
+				 {
+				     this.name=name;
+					 this.last=last;
+					 this.address=address;
+					 this.id=id;
+					 this.salary=salary;
+					 this.tax=tax;
+					 
+					 this.showDatials = function()
+					 
+	                 {
+					     document.write("Name is"+this.name+"</br>");
+						 document.write("Last is "+this.last+"</br>");
+						 document.write("Address is"+this.address+"</br>");
+						 document.write("Id is "+this.id+"</br>");
+						 document.write("Salary is"+this.salary+"</br>");
+						 document.write("Tax is"+this.tax+"</br>");
+						 
+						 var total2=this.tax*this.salary/100;
+						 var total=this.salary-total2;
+						 document.write("Total is"+total+"</br>");
+					 }
+					 
+					     
+					 
+				 }
+			 }
+			 
+			 empname=prompt("Enter name");
+			 emplast=prompt("Enter last");
+			 empaddress=prompt("Enter address");
+			 empid=prompt("Enter Id");
+			 empsalary=parseInt(prompt("Enter salary"));
+			 emptax=parseInt(prompt("Enter tax"));
+			 
+			 var emp = new Employee(empname, emplast,empaddress,empid, empsalary ,emptax);
+		    emp.showDatials();
+		     
+		 </script>
+	 </body>
+</html>

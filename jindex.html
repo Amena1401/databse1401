@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+     <head>
+	     <meta name="author " content=""/>
+		 <meta name="descraption" content=""/>
+		 <meta name="viem-port" content="width=device-width,initail-scal=1, miximum-scal=1"/>
+		 <meta name="keywordes" content="html, javascript"/>	 
+	 </head>
+	 <body>
+	     <center>
+		     <h3> Employee Info</h3>
+	             <script type="text/javascript">
+		             var name=prompt("Enter your Name");
+					 document.write("Emp Name is: "+name+"</br>");
+					 var last=prompt("Enter your last");
+					 document.write("Emp last is: "+last+"</br>");
+					 var salary=prompt("Enter your salary");
+					 var intsalary=parseInt(salary);
+					 document.write("Emp salary is: "+intsalary+"</br>");
+					 var tax=prompt("Enter your tax:");
+					 var inttax=parseInt(tax);
+					 document.write("Emp tax is:: "+inttax+"</br>");
+					 var fine=prompt("Enter your fine");
+					 var intfine=parseInt(fine);
+					 document.write("Emp fine is :"+intfine+"</br>");
+					 var comm=prompt("Enter your comm");
+					 var intcomm=parseInt(comm);
+					 document.write("Emp comm is: "+intcomm+"</br>");
+					 var sal=intsalary*inttax/100*12;
+					 document.write("Salary after tax is: "+sal+"</br>");
+					 var finesal=sal-intfine;
+					 document.write("Salary after pay fine is: "+finesal+"</br>");
+					 var netsalary=finesal+intcomm;
+					 document.write("NetSalary is : "+netsalary);	 
+		         </script>
+		 </center>
+	 </body>
+</html>
